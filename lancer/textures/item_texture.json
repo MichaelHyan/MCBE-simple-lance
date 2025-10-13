@@ -1,0 +1,54 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.items",
+  "texture_data": {
+	  "lanceaa": {
+      "textures": "laa.png"
+    },
+    "lanceab": {
+      "textures": "lab.png"
+    },
+    "lanceba": {
+      "textures": "lba.png"
+    },
+    "lancebb": {
+      "textures": "lbb.png"
+    },
+    "lanceca": {
+      "textures": "lca.png"
+    },
+    "lancecb": {
+      "textures": "lcb.png"
+    },
+    "lanceda": {
+      "textures": "lda.png"
+    },
+    "lancedb": {
+      "textures": "ldb.png"
+    },
+    "lanceea": {
+      "textures": "lea.png"
+    },
+    "lanceeb": {
+      "textures": "leb.png"
+    },
+    "lancefa": {
+      "textures": "lfa.png"
+    },
+    "lancefb": {
+      "textures": "lfb.png"
+    },
+    "lancega": {
+      "textures": "lga.png"
+    },
+    "lancegb": {
+      "textures": "lgb.png"
+    },
+    "lanceha": {
+      "textures": "lha.png"
+    },
+    "lancehb": {
+      "textures": "lhb.png"
+    }
+  }
+}

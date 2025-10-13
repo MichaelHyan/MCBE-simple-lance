@@ -1,0 +1,63 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.lanceh":{
+			"states":{
+				"base_jeta":{
+					"transitions":[
+						{"lha":"query.get_equipped_item_name=='lanceha' && query.is_using_item"},
+						{"lhb":"query.get_equipped_item_name=='lancehb' && query.is_using_item"},
+						{"lha_a":"query.get_equipped_item_name=='lanceha' && variable.attack_time"},
+						{"lhb_a":"query.get_equipped_item_name=='lancehb' && query.is_sprinting"}
+					]
+				},
+				"lha": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 冲击模式",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:lancehb"
+					]
+				},
+				"lhb": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 普通模式",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:lanceha"
+					]
+				},
+				"lha_a": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/damage @e[rm=1,r=4] 7"
+					]
+				},
+				"lhb_a": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/effect @s speed 1 5 true",
+						"/summon wind_charge_projectile",
+						"/effect @s jump_boost 1 1 true",
+						"/effect @s resistance 1 255 true",
+						"/damage @e[rm=1,r=3] 10"
+					]
+				}
+			}
+		}
+ 	}
+ }

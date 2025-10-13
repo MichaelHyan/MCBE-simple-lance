@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "items:lanceb"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "  a",
+      " b ",
+      "b  "
+    ],
+    "key": {
+      "a": {
+        "item": "copper_ingot"
+      },
+      "b": {
+        "item": "stick"
+      }
+    },
+    "result": {
+      "item": "items:lanceba",
+      "count": 1
+    }
+  }
+}

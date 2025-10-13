@@ -1,0 +1,81 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.lanceb":{
+			"states":{
+				"base_jeta":{
+					"transitions":[
+						{"lba":"query.get_equipped_item_name=='lanceba' && query.is_using_item"},
+						{"lbb":"query.get_equipped_item_name=='lancebb' && query.is_using_item"},
+						{"lba_a":"query.get_equipped_item_name=='lanceba' && variable.attack_time"},
+						{"lbb_a":"query.get_equipped_item_name=='lancebb' && !query.is_sprinting && query.modified_move_speed - query.vertical_speed > 0.1 && query.modified_move_speed - query.vertical_speed <= 5"},
+						{"lbb_b":"query.get_equipped_item_name=='lancebb' && query.is_sprinting"},
+						{"lbb_c":"query.get_equipped_item_name=='lancebb' && !query.is_sprinting && query.modified_move_speed - query.vertical_speed > 5"}
+					]
+				},
+				"lba": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 冲击模式",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:lancebb"
+					]
+				},
+				"lbb": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 普通模式",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:lanceba"
+					]
+				},
+				"lba_a": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/damage @e[rm=1,r=4] 5"
+					]
+				},
+				"lbb_a": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/damage @e[rm=1,r=3] 2"
+					]
+				},
+				"lbb_b": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/damage @e[rm=1,r=3] 4"
+					]
+				},
+				"lbb_c": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/damage @e[rm=1,r=3] 7"
+					]
+				}
+			}
+		}
+ 	}
+ }

@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "items:lancea"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "  a",
+      " b ",
+      "b  "
+    ],
+    "key": {
+      "a": {
+        "item": "oak_planks"
+      },
+      "b": {
+        "item": "stick"
+      }
+    },
+    "result": {
+      "item": "items:lanceaa",
+      "count": 1
+    }
+  }
+}

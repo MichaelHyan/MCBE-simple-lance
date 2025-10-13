@@ -1,0 +1,19 @@
+{
+"format_version":1,
+"header":{
+"description":"作者：韩言悦欣 zz纸张神探st",
+"name":"长矛",
+"platform_locked":false,
+"uuid":"c447812d-3a30-4c27-bfde-06374ef1f993",
+"version":[1,0,1]
+},
+"modules":[
+{
+"description":"作者：韩言悦欣 zz纸张神探st",
+"type":"resources",
+"uuid":"fcab7eca-85ea-476b-b30c-60ddc50b40e3",
+"version":[1,0,1]
+}
+],
+"metadata": { "product_type": "addon" }
+}

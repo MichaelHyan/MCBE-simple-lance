@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "items:lanced"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "  a",
+      " b ",
+      "b  "
+    ],
+    "key": {
+      "a": {
+        "item": "gold_ingot"
+      },
+      "b": {
+        "item": "stick"
+      }
+    },
+    "result": {
+      "item": "items:lanceda",
+      "count": 1
+    }
+  }
+}

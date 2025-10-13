@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "items:lancec"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "  a",
+      " b ",
+      "b  "
+    ],
+    "key": {
+      "a": {
+        "item": "iron_ingot"
+      },
+      "b": {
+        "item": "stick"
+      }
+    },
+    "result": {
+      "item": "items:lanceca",
+      "count": 1
+    }
+  }
+}
