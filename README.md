@@ -4,19 +4,19 @@
 
 ![](https://github.com/MichaelHyan/MCBE-simple-lance/blob/main/lancer/laa.png)
 
-![](https://github.com/MichaelHyan/MCBE-simple-lance/blob/main/lancer/tga.png)
+![](https://github.com/MichaelHyan/MCBE-simple-lance/blob/main/lancer/lga.png)
 
-![](https://github.com/MichaelHyan/MCBE-simple-lance/blob/main/lancer/tba.png)
+![](https://github.com/MichaelHyan/MCBE-simple-lance/blob/main/lancer/lba.png)
 
-![](https://github.com/MichaelHyan/MCBE-simple-lance/blob/main/lancer/tca.png)
+![](https://github.com/MichaelHyan/MCBE-simple-lance/blob/main/lancer/lca.png)
 
-![](https://github.com/MichaelHyan/MCBE-simple-lance/blob/main/lancer/tda.png)
+![](https://github.com/MichaelHyan/MCBE-simple-lance/blob/main/lancer/lda.png)
 
-![](https://github.com/MichaelHyan/MCBE-simple-lance/blob/main/lancer/tea.png)
+![](https://github.com/MichaelHyan/MCBE-simple-lance/blob/main/lancer/lea.png)
 
-![](https://github.com/MichaelHyan/MCBE-simple-lance/blob/main/lancer/tfa.png)
+![](https://github.com/MichaelHyan/MCBE-simple-lance/blob/main/lancer/lfa.png)
 
-![](https://github.com/MichaelHyan/MCBE-simple-lance/blob/main/lancer/tha.png)
+![](https://github.com/MichaelHyan/MCBE-simple-lance/blob/main/lancer/lha.png)
 
 超低配版长矛，还原了普攻和人车功能
 
@@ -35,11 +35,9 @@
 
 人车形态分为三个伤害挡位
 
-    基础伤害：0<移动权值-上升速度<=5时触发（如走路跳跃），伤害最低
-
-    冲刺伤害：冲刺时触发，伤害稍高
-
-    坠落伤害：5<移动权值-上升速度时触发（自由落体），伤害最高
+- 基础伤害：0<移动权值-上升速度<=5时触发（如走路跳跃），伤害最低
+- 冲刺伤害：冲刺时触发，伤害稍高
+- 坠落伤害：5<移动权值-上升速度时触发（自由落体），伤害最高
 
 个人能力问题暂时没有设计耐久
 
