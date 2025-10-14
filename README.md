@@ -3,19 +3,12 @@
 对未来版本的拙劣模仿罢了（悲
 
 ![](https://github.com/MichaelHyan/MCBE-simple-lance/blob/main/lancer/laa.png)
-
 ![](https://github.com/MichaelHyan/MCBE-simple-lance/blob/main/lancer/lga.png)
-
 ![](https://github.com/MichaelHyan/MCBE-simple-lance/blob/main/lancer/lba.png)
-
 ![](https://github.com/MichaelHyan/MCBE-simple-lance/blob/main/lancer/lca.png)
-
 ![](https://github.com/MichaelHyan/MCBE-simple-lance/blob/main/lancer/lda.png)
-
 ![](https://github.com/MichaelHyan/MCBE-simple-lance/blob/main/lancer/lea.png)
-
 ![](https://github.com/MichaelHyan/MCBE-simple-lance/blob/main/lancer/lfa.png)
-
 ![](https://github.com/MichaelHyan/MCBE-simple-lance/blob/main/lancer/lha.png)
 
 超低配版长矛，还原了普攻和人车功能
