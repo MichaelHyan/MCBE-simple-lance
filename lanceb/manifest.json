@@ -4,7 +4,7 @@
 "description":"作者：韩言悦欣 zz纸张神探st",
 "name":"长矛",
 "uuid":"a2775650-e979-40e7-9d55-e4ef368023ae",
-"version":[3,0,2],
+"version":[1,0,3],
 "min_engine_version":[1,10,0]
 },
 "modules":[
@@ -12,7 +12,7 @@
 "description":"作者：韩言悦欣 zz纸张神探st",
 "type":"data",
 "uuid":"cfc03977-8e2c-4b5a-991d-16e24bf2c4c8",
-"version":[3,0,2]
+"version":[1,0,3]
 }
 ],
 "metadata": { "product_type": "addon" }
