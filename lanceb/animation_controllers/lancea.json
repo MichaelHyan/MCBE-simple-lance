@@ -8,10 +8,10 @@
 						{"laa":"query.get_equipped_item_name=='lanceaa' && query.is_using_item"},
 						{"lab":"query.get_equipped_item_name=='lanceab' && query.is_using_item && !query.is_sprinting"},
 						{"laa_a":"query.get_equipped_item_name=='lanceaa' && variable.attack_time"},
-						{"lab_a":"query.get_equipped_item_name=='lanceab' && !query.is_using_item && !query.is_sprinting && query.modified_move_speed - query.vertical_speed > 0.1 && query.modified_move_speed - query.vertical_speed <= 5"},
+						{"lab_a":"query.get_equipped_item_name=='lanceab' && !query.is_using_item && !query.is_sprinting && query.ground_speed - query.vertical_speed > 0.1 && query.ground_speed - query.vertical_speed <= 10"},
 						{"lab_b":"query.get_equipped_item_name=='lanceab' && !variable.attack_time && !query.is_using_item && query.is_sprinting"},
 						{"lab_d":"query.get_equipped_item_name=='lanceab' && variable.attack_time && query.is_sprinting"},
-						{"lab_c":"query.get_equipped_item_name=='lanceab' && !query.is_using_item && !query.is_sprinting && query.modified_move_speed - query.vertical_speed > 5"}
+						{"lab_c":"query.get_equipped_item_name=='lanceab' && !query.is_using_item && !query.is_sprinting && query.ground_speed - query.vertical_speed > 10"}
 					]
 				},
 				"laa": {
@@ -43,8 +43,7 @@
 							}
 					],
 					"on_entry": [
-						"/tp @e[type=item,r=4] @s",
-						"/damage @e[rm=1,r=4] 4"
+						"/damage @e[rm=1,r=4,type=!item] 4"
 					]
 				},
 				"lab_a": {
@@ -54,8 +53,7 @@
 							}
 					],
 					"on_entry": [
-						"/tp @e[type=item,r=3] @s",
-						"/damage @e[rm=1,r=3] 1"
+						"/damage @e[rm=1,r=3,type=!item] 1"
 					]
 				},
 				"lab_b": {
@@ -65,8 +63,8 @@
 							}
 					],
 					"on_entry": [
-						"/tp @e[type=item,r=3] @s",
-						"/damage @e[rm=1,r=3] 3"
+						"/particle minecraft:balloon_gas_particle ~ ~ ~",
+						"/damage @e[rm=1,r=3,type=!item] 3"
 					]
 				},
 				"lab_c": {
@@ -76,8 +74,9 @@
 							}
 					],
 					"on_entry": [
-						"/tp @e[type=item,r=3] @s",
-						"/damage @e[rm=1,r=3] 6"
+						"/particle minecraft:basic_flame_particle ~ ~ ~",
+						"/particle minecraft:balloon_gas_particle ~ ~ ~",
+						"/damage @e[rm=1,r=3,type=!item] 6"
 					]
 				},
 				"lab_d": {
@@ -87,6 +86,8 @@
 							}
 					],
 					"on_entry": [
+						"/particle minecraft:basic_flame_particle ~ ~ ~",
+						"/particle minecraft:balloon_gas_particle ~ ~ ~",
 						"/effect @s speed 1 5 true"
 					]
 				}
