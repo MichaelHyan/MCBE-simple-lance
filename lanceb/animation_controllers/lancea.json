@@ -6,12 +6,13 @@
 				"base_jeta":{
 					"transitions":[
 						{"laa":"query.get_equipped_item_name=='lanceaa' && query.is_using_item"},
-						{"lab":"query.get_equipped_item_name=='lanceab' && query.is_using_item && !query.is_sprinting"},
+						{"lab":"query.get_equipped_item_name=='lanceab' && query.is_using_item"},
 						{"laa_a":"query.get_equipped_item_name=='lanceaa' && variable.attack_time"},
-						{"lab_a":"query.get_equipped_item_name=='lanceab' && !query.is_using_item && !query.is_sprinting && query.ground_speed - query.vertical_speed > 0.1 && query.ground_speed - query.vertical_speed <= 10"},
-						{"lab_b":"query.get_equipped_item_name=='lanceab' && !variable.attack_time && !query.is_using_item && query.is_sprinting"},
+						{"lab_a":"query.get_equipped_item_name=='lanceab' && !variable.attack_time && !query.is_using_item && query.ground_speed - query.vertical_speed > 0.1 && query.ground_speed - query.vertical_speed <= 5"},
+						{"lab_b":"query.get_equipped_item_name=='lanceab' && !variable.attack_time && !query.is_using_item && query.ground_speed - query.vertical_speed > 5 && query.ground_speed - query.vertical_speed <= 10"},
 						{"lab_d":"query.get_equipped_item_name=='lanceab' && variable.attack_time && query.is_sprinting"},
-						{"lab_c":"query.get_equipped_item_name=='lanceab' && !query.is_using_item && !query.is_sprinting && query.ground_speed - query.vertical_speed > 10"}
+						{"lab_c":"query.get_equipped_item_name=='lanceab' && !variable.attack_time && !query.is_using_item && query.ground_speed - query.vertical_speed > 10 && query.ground_speed - query.vertical_speed <= 30"},
+						{"lab_e":"query.get_equipped_item_name=='lanceab' && !variable.attack_time && !query.is_using_item && query.ground_speed - query.vertical_speed > 30"}
 					]
 				},
 				"laa": {
@@ -89,6 +90,17 @@
 						"/particle minecraft:basic_flame_particle ~ ~ ~",
 						"/particle minecraft:balloon_gas_particle ~ ~ ~",
 						"/effect @s speed 1 5 true"
+					]
+				},
+				"lab_e": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/particle minecraft:basic_flame_particle ~ ~ ~",
+						"/damage @e[rm=1,r=3,type=!item] 12"
 					]
 				}
 			}
